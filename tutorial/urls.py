@@ -22,10 +22,13 @@ from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
-    url(r'^', include('snippets.urls')),
+    # url(r'^', include('snippets.urls')),
 
     # url(r'^snippets/$', views2.snippet_list),
     # url(r'^snippets/(?P<pk>[0-9]+)$', views2.snippet_detail),
-    url(r'^', include('requestResponse.urls')),
+    # url(r'^', include('requestResponse.urls')),
+    # url(r'^', include('viewClass.urls')),
+    # url(r'^', include('mixinsView.urls')),
+    url(r'^', include('normalView.urls')),
 ]
 
